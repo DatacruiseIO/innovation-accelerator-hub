@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,25 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                // Think tank custom colors
+                thinkBlue: {
+                    50: '#EBF5FF',
+                    100: '#E1EFFE',
+                    200: '#C3DDFD',
+                    300: '#A5D7E8',
+                    400: '#576CBC',
+                    500: '#19376D',
+                    600: '#0B2447',
+                    700: '#0A192F',
+                    800: '#060E1A',
+                    900: '#030712',
+                },
+                thinkAccent: {
+                    light: '#A5D7E8',
+                    DEFAULT: '#576CBC',
+                    dark: '#19376D',
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +103,31 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'fade-in': {
+                    '0%': {
+                        opacity: '0',
+                        transform: 'translateY(10px)'
+                    },
+                    '100%': {
+                        opacity: '1',
+                        transform: 'translateY(0)'
+                    }
+                },
+                'gradient-flow': {
+                    '0%, 100%': {
+                        backgroundPosition: '0% 50%'
+                    },
+                    '50%': {
+                        backgroundPosition: '100% 50%'
+                    }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'fade-in': 'fade-in 0.5s ease-out',
+                'gradient-flow': 'gradient-flow 8s ease infinite'
 			}
 		}
 	},
