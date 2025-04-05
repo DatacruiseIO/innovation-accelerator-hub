@@ -6,27 +6,31 @@ const Approach = () => {
   const steps = [
     {
       number: "01",
-      title: "Assessment & Strategy",
+      title: "Foundation Assessment & Strategy",
       description: "We begin by understanding your business objectives and assessing your current data and AI capabilities. Our team develops a strategic roadmap aligned with your goals.",
-      features: ["Data maturity assessment", "Strategic opportunity mapping", "ROI modeling & business case"]
+      features: ["Data maturity assessment", "Strategic opportunity mapping", "ROI modeling & business case"],
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=80"
     },
     {
       number: "02",
       title: "Innovation Center Setup",
-      description: "We establish a dedicated Centre of Innovation with the right mix of talent, technology, and processes to drive your AI initiatives forward.",
-      features: ["Cross-functional team formation", "Technology stack implementation", "Agile delivery framework"]
+      description: "We establish a dedicated Centre of Innovation with training, enablement, and robust foundations for security, governance, and innovation.",
+      features: ["Training and Enablement", "Foundation for Security, Governance and Innovation", "Transparent Partnership Framework"],
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80"
     },
     {
       number: "03",
       title: "Accelerated Development",
       description: "Our consultants work alongside your team to rapidly prototype and develop AI solutions that address your most pressing business challenges.",
-      features: ["Rapid prototyping", "Solution development", "Knowledge transfer"]
+      features: ["Rapid prototyping", "Solution development", "Knowledge transfer"],
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80"
     },
     {
       number: "04",
       title: "Scale & Transform",
       description: "We help you scale successful innovations across your organization, transforming operations and creating sustainable competitive advantage.",
-      features: ["Enterprise deployment", "Change management", "Continuous improvement"]
+      features: ["Enterprise deployment", "Change management", "Continuous improvement"],
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80"
     }
   ];
 
@@ -63,8 +67,12 @@ const Approach = () => {
                 </div>
               </div>
               <div className={`lg:col-span-7 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                <div className="bg-gray-100 h-60 md:h-80 rounded-xl flex items-center justify-center">
-                  <span className="text-gray-400 text-lg">Case study illustration {index + 1}</span>
+                <div className="rounded-xl overflow-hidden">
+                  <img 
+                    src={step.image} 
+                    alt={`${step.title} illustration`} 
+                    className="w-full h-60 md:h-80 object-cover"
+                  />
                 </div>
               </div>
             </div>
