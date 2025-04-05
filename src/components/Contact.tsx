@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +25,7 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
+    // Simulate form submission to helpdesk@datacruise.io
     setTimeout(() => {
       toast({
         title: "Message Sent",
@@ -113,7 +113,7 @@ const Contact = () => {
                 className="bg-thinkBlue-500 hover:bg-thinkBlue-600 text-white w-full"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Sending..." : <span className="flex items-center">Send Message <Send className="ml-2 h-4 w-4" /></span>}
               </Button>
             </form>
           </div>
@@ -166,8 +166,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-800 font-medium">Email</p>
-                    <a href="mailto:contact@innovateai.com" className="text-thinkBlue-500 hover:underline">
-                      contact@innovateai.com
+                    <a href="mailto:helpdesk@datacruise.io" className="text-thinkBlue-500 hover:underline">
+                      helpdesk@datacruise.io
                     </a>
                   </div>
                 </div>
