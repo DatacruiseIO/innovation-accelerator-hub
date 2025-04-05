@@ -8,6 +8,13 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
+            <div className="flex items-center mb-6">
+              <img 
+                src="/lovable-uploads/00bbf89e-53f7-49b9-a556-82d345bfaa46.png" 
+                alt="DataCruise Logo Icon" 
+                className="h-16 mr-3" 
+              />
+            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Accelerating <span className="gradient-text">AI Innovation</span> for Enterprise Transformation
             </h1>

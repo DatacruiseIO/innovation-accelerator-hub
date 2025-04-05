@@ -62,13 +62,20 @@ const MicrosoftPartnership = () => {
           <div className="relative">
             <div className="absolute -z-10 w-full h-full bg-gradient-to-r from-blue-100 to-thinkAccent-light rounded-full blur-3xl opacity-20"></div>
             <div className="bg-white rounded-xl shadow-xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg p-6 mb-6">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-white" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M11.4 0.011h-11.4v11.4h11.4v-11.4z"></path>
-                  <path d="M24 0.011h-11.4v11.4h11.4v-11.4z"></path>
-                  <path d="M11.4 12.589h-11.4v11.4h11.4v-11.4z"></path>
-                  <path d="M24 12.589h-11.4v11.4h11.4v-11.4z"></path>
-                </svg>
+              <div className="flex justify-between items-center mb-6">
+                <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg p-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.4 0.011h-11.4v11.4h11.4v-11.4z"></path>
+                    <path d="M24 0.011h-11.4v11.4h11.4v-11.4z"></path>
+                    <path d="M11.4 12.589h-11.4v11.4h11.4v-11.4z"></path>
+                    <path d="M24 12.589h-11.4v11.4h11.4v-11.4z"></path>
+                  </svg>
+                </div>
+                <img 
+                  src="/lovable-uploads/00bbf89e-53f7-49b9-a556-82d345bfaa46.png" 
+                  alt="DataCruise Logo Icon" 
+                  className="h-14" 
+                />
               </div>
               <h3 className="text-xl font-semibold mb-3">Microsoft Certified Solutions</h3>
               <p className="text-gray-600 mb-6">

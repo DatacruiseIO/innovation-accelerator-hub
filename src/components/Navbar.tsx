@@ -14,7 +14,11 @@ const Navbar = () => {
     <nav className="py-4 px-6 md:px-10 bg-white/90 backdrop-blur-sm fixed w-full z-50 shadow-sm">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <span className="text-thinkBlue-600 font-bold text-2xl">InnovateAI</span>
+          <img 
+            src="/lovable-uploads/e2fb1145-5f02-492b-99e7-19c1679b0db7.png" 
+            alt="DataCruise Logo" 
+            className="h-10 mr-2" 
+          />
         </div>
 
         {/* Desktop Navigation */}

@@ -8,7 +8,13 @@ const Footer = () => {
       <div className="container mx-auto py-16 px-6 md:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">InnovateAI</h2>
+            <div className="flex items-center">
+              <img
+                src="/lovable-uploads/e2fb1145-5f02-492b-99e7-19c1679b0db7.png"
+                alt="DataCruise Logo"
+                className="h-12 mb-2"
+              />
+            </div>
             <p className="text-gray-300">
               Accelerating enterprise transformation through AI and data innovation.
             </p>
@@ -67,7 +73,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 mb-4 md:mb-0">
-            © 2025 InnovateAI. All rights reserved.
+            © 2025 DataCruise. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
