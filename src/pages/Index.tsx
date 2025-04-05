@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Industries from "@/components/Industries";
+import MicrosoftPartnership from "@/components/MicrosoftPartnership";
 import InnovationHub from "@/components/InnovationHub";
 import Approach from "@/components/Approach";
 import Contact from "@/components/Contact";
@@ -13,6 +14,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Industries />
+      <MicrosoftPartnership />
       <InnovationHub />
       <Approach />
       <Contact />
