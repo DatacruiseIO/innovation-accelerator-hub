@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Database, Brain, LineChart } from 'lucide-react';
+
 const Hero = () => {
   return <section id="home" className="pt-32 pb-20 px-6 md:px-10">
       <div className="container mx-auto">
@@ -16,8 +18,10 @@ const Hero = () => {
               leverage industry-leading AI and data solutions at unprecedented speed.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-              <Button className="bg-thinkBlue-500 hover:bg-thinkBlue-600 text-white px-8 py-6 text-lg">
-                Explore Industries <ArrowRight className="ml-2 h-5 w-5" />
+              <Button asChild className="bg-thinkBlue-500 hover:bg-thinkBlue-600 text-white px-8 py-6 text-lg">
+                <Link to="/industry-examples">
+                  Explore Industries <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
               <Button variant="outline" className="border-thinkBlue-500 text-thinkBlue-500 hover:bg-thinkBlue-50 px-8 py-6 text-lg">
                 Our Approach
