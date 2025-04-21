@@ -1,7 +1,8 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Factory, Stethoscope, Droplet, ShoppingBag, BarChart3, Building2 } from "lucide-react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const industryExamples = [
   {
@@ -81,6 +82,7 @@ const industryExamples = [
 const IndustryExamples = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+      <Navbar />
       <div className="container mx-auto py-20 px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h1 className="text-4xl font-bold mb-4">Industry Success Stories</h1>
@@ -120,6 +122,7 @@ const IndustryExamples = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
