@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Database, Brain, LineChart } from 'lucide-react';
@@ -23,8 +24,8 @@ const Hero = () => {
                   Explore Industries <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant="outline" className="border-thinkBlue-500 text-thinkBlue-500 hover:bg-thinkBlue-50 px-8 py-6 text-lg">
-                Our Approach
+              <Button asChild variant="outline" className="border-thinkBlue-500 text-thinkBlue-500 hover:bg-thinkBlue-50 px-8 py-6 text-lg">
+                <a href="#approach">Our Approach</a>
               </Button>
             </div>
           </div>
