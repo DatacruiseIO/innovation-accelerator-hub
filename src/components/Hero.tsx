@@ -1,19 +1,12 @@
-
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Database, Brain, LineChart } from 'lucide-react';
-
 const Hero = () => {
-  return (
-    <section id="home" className="pt-32 pb-20 px-6 md:px-10">
+  return <section id="home" className="pt-32 pb-20 px-6 md:px-10">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="flex items-center mb-6">
-              <img 
-                src="/lovable-uploads/00bbf89e-53f7-49b9-a556-82d345bfaa46.png" 
-                alt="DataCruise Logo Icon" 
-                className="h-16 mr-3" 
-              />
+              <img alt="DataCruise Logo Icon" className="h-16 mr-3 object-scale-down" src="/lovable-uploads/8a29bff2-7864-4baf-982f-63c0325d5b79.png" />
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Accelerating <span className="gradient-text">AI Innovation</span> for Enterprise Transformation
@@ -58,8 +51,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
